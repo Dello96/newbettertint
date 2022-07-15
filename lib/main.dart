@@ -21,7 +21,7 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  String _ssid = 'GLATIC_L_W001';
+  String _ssid = '';
 
   @override
   void initState() {
@@ -80,7 +80,6 @@ class _MyAppState extends State<MyApp> {
                 height: 200,
                 child: TextButton(
                     onPressed: () {
-                      FlutterWifiConnect.ssid;
                       Navigator.push(context, CupertinoPageRoute(builder: (context) => SuccessLoginPage()));
                     },
                     child: Text('Connect',
